@@ -1,12 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github</title>
+    <title>Document</title>
+
+
+
+    <style>
+        body,*{
+            padding: 0;
+            margin: 0;
+        }
+        .mainbox {
+            background-color: blue;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 'header header header' 'menu1 main right1''menu1 footer footer';
+            gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 80px 1fr 70px;
+        }
+        
+
+        .mainbox > div{
+            background: yellow
+        }
+        
+        .item1{
+            grid-area: header;
+        }
+        .item2{
+            grid-area: menu1;
+        }
+        .item3{
+            grid-area: main;
+        }
+        .item4{
+            grid-area: right1;
+        }
+        .item5{
+            grid-area: footer;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>GitHub by kamal</h1>
+
+
+    <div class="mainbox">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+
+
 </body>
+
 </html>
